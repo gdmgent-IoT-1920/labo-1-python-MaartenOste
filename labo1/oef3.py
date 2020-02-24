@@ -20,7 +20,14 @@ while inp != number:
 			if number[i] in inp and number[i] != inp[i]:
 				contains+=1
 			i+=1
-		print("correct: " + str(correct) + " contains: " + str(contains))
+		if correct == 1:
+			print(str(correct) + " kip", end=', ')
+		else:
+			print(str(correct) + " kippen", end=', ')
+		if contains == 1:
+			print(str(contains) + " ei")
+		else:
+			print(str(contains) + " eieren")
 	inp = input("Geef een viercijferig nummer in: ") 
 	counter+=1
 
